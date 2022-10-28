@@ -3,27 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Lagoona</title>
 </head>
 <body>
   <header class="header">
-    <div class="container">
+    <div class="container flex container-logo">
       <a href="" class="header-logo">
         <img src="img/logo.svg" class="header-logo" alt="Logo">
       </a>
-      <address>
+      <address class="header-tel">
         <a href="tel:+74953225448" class="contacts-item-link">+7(495)322-54-48</a>
       </address>
-      <button class="btn header-btn">
+      <button class="btn header-btn btn-reset">
         <svg width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M10.59 1.41L14.17 5H0V7H14.17L10.58 10.59L12 12L18 6L12 0L10.59 1.41ZM19 0V12H21V0H19Z" fill="#CC9933"/>
         </svg>
         Личный кабинет
       </button>
     </div>
-    <div>
+    <div class="container flex container-nav">
       <nav class="header-nav">
-        <ul class="header-list">
+        <ul class="header-list list-reset flex">
           <li class="header-li-item">
             <a href="#about" class="header-link">О нас</a>
           </li>
@@ -44,29 +46,27 @@
           </li>
         </ul>
       </nav>
-      <button class="btn btn-border">
-        Хочу тур
-      </button>
-      <button class="btn btn-border">
-        Обратный звонок
-      </button>
+      <div class="header-btns-nav">
+        <button class="btn btn-border btn-reset header-btn-nav">Хочу тур</button>
+        <button class="btn btn-border btn-reset header-btn-nav">Обратный звонок</button>
+      </div>
     </div>
   </header>
 
   <main class="main">
-    <section id="special-offers" class="special-offers">
+    <section id="special-offers" class="special-offers section-offset">
       <div class="container">
         <h2 class="section-title special-offers-title">
           Спецпредложения
         </h2>
-        <ul class="special-offers-list">
+        <ul class="special-offers-list list-reset flex flex-wrap">
           <il class="special-offers-item">
             <article class="special-prview">
               <h3 class="special-prview-text">
                 Мальдивские острова
               </h3>
               <p class="special-cost">от&nbsp;55&nbsp;000&nbsp;₽</p>
-              <button class="btn btn-right">
+              <button class="btn btn-right btn-reset">
                 Подробнее
               </button>
             </article>
@@ -77,7 +77,7 @@
                 Номера категории люкс
               </h3>
               <p class="special-cost">от&nbsp;5&nbsp;000&nbsp;₽</p>
-              <button class="btn btn-right">
+              <button class="btn btn-right btn-reset">
                 Подробнее
               </button>
             </article>
@@ -88,7 +88,7 @@
                 Горящий тур на&nbsp;остров Крит
               </h3>
               <p class="special-cost">от&nbsp;30&nbsp;000&nbsp;₽</p>
-              <button class="btn btn-right">
+              <button class="btn btn-right btn-reset">
                 Подробнее
               </button>
             </article>
@@ -96,7 +96,7 @@
         </ul>
       </div>
     </section>
-    <section id="about" class="about">
+    <section id="about" class="about section-offset">
       <div class="container">
         <h2 class="section-title about-title">
           О нас
@@ -108,21 +108,21 @@
         </p>
       </div>
     </section>
-    <section id="services" class="services">
+    <section id="services" class="services section-offset">
       <div class="container">
         <h2 class="section-title services-title">
           Услуги
         </h2>
-        <ul class="services-list">
+        <ul class="services-list list-reset flex flex-wrap">
           <li class="services-item">
             <article class="services-article">
-              <button class="btn btn-right">Эксклюзивное обслуживание</button>
+              <button class="btn btn-right btn-reset">Эксклюзивное обслуживание</button>
               <p class="services-p">Равным образом постоянный количественный рост и сфера нашей активности</p>
             </article>
           </li>
           <li class="services-item">
             <article class="services-article">
-              <button class="btn btn-right">
+              <button class="btn btn-right btn-reset">
                 Аренда банкетных залов
               </button>
               <p class="services-p">Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм</p>
@@ -130,7 +130,7 @@
           </li>
           <li class="services-item">
             <article class="services-article">
-              <button class="btn btn-right">
+              <button class="btn btn-right btn-reset">
                 Сауны, бассейны, бани, фитнес-залы
               </button>
               <p class="services-p">Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
@@ -138,7 +138,7 @@
           </li>
           <li class="services-item">
             <article class="services-article">
-              <button class="btn btn-right">
+              <button class="btn btn-right btn-reset">
                 Охраняемые автомобильные стоянки
               </button>
               <p class="services-p">Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
@@ -147,12 +147,12 @@
         </ul>
       </div>
     </section>
-    <section id="advantages" class="advantages">
+    <section id="advantages" class="advantages section-offset">
       <div class="container">
         <h2 class="section-title advantages-title">
           Преимущества
         </h2>
-        <ul class="advantages-list">
+        <ul class="advantages-list list-reset flex flex-wrap">
           <li class="advantages-item">
             <article class="advantages-article">
               <img src="img/advantages-1.svg" alt="">
@@ -204,12 +204,12 @@
         </ul>
       </div>
     </section>
-    <section id="placements" class="placements">
+    <section id="placements" class="placements section-offset">
       <div class="container">
-        <h2 class="placements-title">
+        <h2 class="section-title placements-title">
           Размещение
         </h2>
-        <ul class="placements-list">
+        <ul class="placements-list list-reset flex flex-wrap">
           <li class="placements-item">
             <article class="placements-article">
               <div class="placements-img">
@@ -226,7 +226,7 @@
                 </div>
                 <p class="placements-name-p">Lagoona espa&ntilde;ola</p>
                 <p class="placements-location-p">Барселона, Испания</p>
-                <button class="btn btn-border">
+                <button class="btn btn-border btn-reset">
                   Номера
                 </button>
               </div>
@@ -248,7 +248,7 @@
                 </div>
                 <p class="placements-name-p">Lagoona son t&iacute;picas</p>
                 <p class="placements-location-p">Барселона, Испания</p>
-                <button class="btn btn-border">
+                <button class="btn btn-border btn-reset">
                   Номера
                 </button>
               </div>
@@ -270,7 +270,7 @@
                 </div>
                 <p class="placements-name-p">Lagoona de&nbsp;la&nbsp;guerra</p>
                 <p class="placements-location-p">Барселона, Испания</p>
-                <button class="btn btn-border">
+                <button class="btn btn-border btn-reset">
                   Номера
                 </button>
               </div>
@@ -292,7 +292,7 @@
                 </div>
                 <p class="placements-name-p">Lagoona mentira piadosa</p>
                 <p class="placements-location-p">Барселона, Испания</p>
-                <button class="btn btn-border">
+                <button class="btn btn-border btn-reset">
                   Номера
                 </button>
               </div>
@@ -314,7 +314,7 @@
                 </div>
                 <p class="placements-name-p">Lagoona empujar la&nbsp;creatividad</p>
                 <p class="placements-location-p">Барселона, Испания</p>
-                <button class="btn btn-border">
+                <button class="btn btn-border btn-reset">
                   Номера
                 </button>
               </div>
@@ -336,7 +336,7 @@
                 </div>
                 <p class="placements-name-p">Lagoona el&nbsp;retorno</p>
                 <p class="placements-location-p">Барселона, Испания</p>
-                <button class="btn btn-border">
+                <button class="btn btn-border btn-reset">
                   Номера
                 </button>
               </div>
@@ -358,7 +358,7 @@
                 </div>
                 <p class="placements-name-p">Lagoona mentira piadosa</p>
                 <p class="placements-location-p">Барселона, Испания</p>
-                <button class="btn btn-border">
+                <button class="btn btn-border btn-reset">
                   Номера
                 </button>
               </div>
@@ -380,7 +380,7 @@
                 </div>
                 <p class="placements-name-p">Lagoona suerte sigui&oacute; siempre</p>
                 <p class="placements-location-p">Барселона, Испания</p>
-                <button class="btn btn-border">
+                <button class="btn btn-border btn-reset">
                   Номера
                 </button>
               </div>
@@ -391,7 +391,7 @@
               <div class="placements-img">
                 <img src="img/placements-9.jpg" alt="">
               </div>
-              <button class="btn btn-right btn-placements-all">
+              <button class="btn btn-right btn-placements-all btn-reset">
                 Просмотреть все варианты
               </button>
             </article>
