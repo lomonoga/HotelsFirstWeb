@@ -202,7 +202,10 @@ body {
   width: 573px;
   height: 258px;
   flex-direction: column;
-  margin-right: 24px;
+}
+
+.special-offers-item-column:not(:last-child) {
+  margin-bottom: 24px;
 }
 
 .special-offers-item-column-maldives {
@@ -219,6 +222,10 @@ body {
   background-position: center;
 }
 
+.special-ul-margin {
+  margin-right: 24px;
+}
+
 .special-noflex-right {
   width: 573px;
   height: 540px;
@@ -228,12 +235,35 @@ body {
   background-position: center;
 }
 
+.special-prview {
+  margin-left: 45px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.special-prview-last {
+  margin-top: 210px;
+}
+
 .special-prview-text {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 40px;
   color: #FFF;
+  margin-bottom: 15px;
+}
+
+.special-prview-text-last {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  color: #FFF;
+}
+
+.btn-more {
+  color: #F0BF5F;
 }
 
 .special-cost {
@@ -242,14 +272,27 @@ body {
   font-size: 20px;
   line-height: 20px;
   color: #FFF;
+  opacity: 0.8;
+  margin: 0 0 47px;
+  display: block;
 }
 
 .special-cost-last {
   font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 30px;
-color: #FFFF;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: #FFFF;
+  opacity: 0.8;
+  margin: 0 0 47px;
+  display: block;
+}
+
+.btn-arrow {
+  background-image: url("..//img/arrow-btn.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 15px;
 }
 
 /*services*/
