@@ -17,9 +17,41 @@ img {
   max-width: 100%;
 }
 
+@font-face {
+  font-family: 'Muller';
+  src: local('Muller-Regular'),
+    url("../fonts/MullerRegular.woff2") format("woff2"),
+    url("../fonts/MullerRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('Muller-Medium'),
+    url("../fonts/MullerMedium.woff2") format("woff2"),
+    url("../fonts/MullerMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('Muller-Bold'),
+    url("../fonts/MullerBold.woff2") format("woff2"),
+    url("../fonts/MullerBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   min-width: 1170px;
-  font-family: "";
+  font-family: "Muller";
+  font-weight: 400;
+  background-color: #E5E5E5;
 }
 
 /*glob*/
@@ -61,13 +93,43 @@ body {
   margin-left: auto;
 }
 
+.header-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #666666;
+}
+
 .header-tel {
   margin-left: 40px;
+  margin-top: 17px;
+}
+
+.btn-reset {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #CC9933;
+}
+
+.contacts-item-link {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 20px;
+  color: #666666;
 }
 
 .container-logo {
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.header-li-item {
+  margin-top: 27px;
+  margin-bottom: 27px;
 }
 
 .header-li-item:not(:last-child) {
@@ -76,10 +138,22 @@ body {
 
 .container-nav {
   margin-bottom: 70px;
+  min-width: 1170px;
+  min-height: 70px;
+  background-color: #fff;
+  border-radius: 15px;
 }
 
 .header-btn-nav:not(:last-child) {
   margin-right: 40px;
+}
+
+.header-btn-nav {
+  margin-top: 14px;
+  margin-bottom: 14px;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+  padding: 13px 20px;
 }
 
 .header-btns-nav {
@@ -88,16 +162,94 @@ body {
   margin-right: 45px;
 }
 
+.header-nav {
+  padding-left: 45px;
+}
+
 /*special-offers*/
 .flex-wrap {
   flex-wrap: wrap;
 }
-.special-prview {
-  width: 573px;
+
+.special-offers-list {
+  max-width: 573px;
+}
+
+.section-title {
+  padding-left: 40px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333;
+}
+
+.special-flex-column {
+  max-width: 1170px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .special-cost {
   display: inline-block;
+}
+
+.special-offers-item {
+  border-radius: 15px;
+}
+
+.special-offers-item-column {
+  width: 573px;
+  height: 258px;
+  flex-direction: column;
+  margin-right: 24px;
+}
+
+.special-offers-item-column-maldives {
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url('../img/maldives.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.special-offers-item-column-crete {
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url('../img/crete.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.special-noflex-right {
+  width: 573px;
+  height: 540px;
+  background-image: linear-gradient(0deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url('../img/lux.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.special-prview-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: #FFF;
+}
+
+.special-cost {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFF;
+}
+
+.special-cost-last {
+  font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 30px;
+color: #FFFF;
 }
 
 /*services*/
