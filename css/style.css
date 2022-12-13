@@ -13,8 +13,13 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin: 0;
+}
+
 img {
   max-width: 100%;
+  margin: 0px;
 }
 
 @font-face {
@@ -48,10 +53,12 @@ img {
 }
 
 body {
-  min-width: 1170px;
+ width: 1170px;
   font-family: "Muller";
   font-weight: 400;
   background-color: #E5E5E5;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*glob*/
@@ -59,6 +66,11 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.border-r-15 {
+  border-radius: 15px;
+  background-color: #FFF;
 }
 
 .btn-reset {
@@ -295,19 +307,79 @@ body {
   padding-right: 15px;
 }
 
+/*About-us*/
+.about-p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000;
+  margin-bottom: 0;
+}
+
+.container-about {
+  margin-left: 0;
+  max-width: 888px;
+}
+
 /*services*/
 .services-p {
-  min-width: 400px;
-  max-width: 550px;
+  max-width: 400px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000;
+  margin: 0;
+}
+
+.btn-services {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
 }
 
 .services-item {
   width: 573px;
+  height: 330px;
 }
 
 .services-item:not(:nth-child(2n)) {
   margin-right: 24px;
+}
+
+.services-item:not(:nth-child(n+3)) {
   margin-bottom: 22px;
+}
+
+.servaces-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  border-radius: 15px 15px 0px 0px;
+  height: 165px;
+}
+
+.services-cont {
+  margin-left: 45px;
+  margin-top: 26px;
+}
+
+.services-service {
+  background-image: url("../img/services-service.png");
+}
+
+.services-hall {
+  background-image: url("../img/services-hall.png");
+}
+
+.services-sauna {
+  background-image: url("../img/services-sauna.png");
+}
+
+.services-cars {
+  background-image: url("../img/services-cars.png");
 }
 
 /*advantages*/
@@ -316,12 +388,150 @@ body {
   height: 276px;
 }
 
+.advantages-img {
+  margin-bottom: 10px;
+}
+
+.advantages-article {
+  margin-left: 45px;
+  margin-top: 40px;
+  width: 189px;
+}
+
+.advantages-p {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+}
+
+.advantages-item:not(:nth-child(n+5)) {
+  margin-bottom: 22px;
+}
+
+.advantages-item:not(:nth-child(4n)) {
+  margin-right: 22px;
+}
+
 /*placements*/
+.placements-item {
+  min-width: 374px;
+  min-height: 440px;
+}
 .placements-item:not(:nth-child(3n)) {
   margin-right: 24px;
+}
+
+.placements-item:not(:nth-child(n+7)) {
   margin-bottom: 24px;
 }
 
-.text-dim, .night-cost {
+.placements-img {
+  height: 217px;
+  margin-bottom: 32px;
+}
+
+.placements-article {
+  overflow: hidden;
+  width: 374px;
+  height: 440px;
+}
+
+.placements-item-title {
+  margin-left: 45px;
+  margin-right: 40px;
+}
+
+.p-block {
   display: inline-block;
+  margin-bottom: 16px;
+}
+
+.placements-stars-img {
+  display: inline-block;
+  width: 94px;
+  margin-left: 55px;
+}
+
+.img-star:not(:nth-child(5n)) {
+  margin-right: 1px;
+}
+
+.night-cost {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.text-dim {
+  display: inline-block;
+  margin-right: 4px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #999;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.price {
+  display: inline-block;
+  margin-right: 12px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.placements-name-p {
+  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000;
+}
+
+.placements-location-p {
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #999;
+}
+
+.btn-border {
+  box-sizing: border-box;
+  padding: 13px 20px;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+}
+
+.btn-right {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  color: #FFFFFF;
+  margin-left: 54px;
+  margin-top: 125px;
+  background-image: url("../img/Arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 18px;
 }
