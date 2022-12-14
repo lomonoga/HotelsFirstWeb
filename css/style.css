@@ -56,7 +56,7 @@ body {
  width: 1170px;
   font-family: "Muller";
   font-weight: 400;
-  background-color: #E5E5E5;
+  background-color: #E9E9E9;
   margin-left: auto;
   margin-right: auto;
 }
@@ -88,11 +88,6 @@ body {
   width: 1170px;
   padding: 0 0px;
   margin: 0 auto;
-}
-
-.section-title {
-  margin: 0;
-  margin-bottom: 20px;
 }
 
 .section-offset {
@@ -188,7 +183,9 @@ body {
 }
 
 .section-title {
-  padding-left: 40px;
+  margin: 0;
+  margin-bottom: 20px;
+  margin-left: 40px;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -338,6 +335,13 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 200%;
+}
+
+.btn-arrow-services {
+  background-image: url("..//img/arrow-services.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 15px;
 }
 
 .services-item {
@@ -534,4 +538,331 @@ body {
   background-repeat: no-repeat;
   background-position: right center;
   padding-right: 18px;
+}
+
+ /*blog*/
+ .blog-container {
+  background-color: #E5E5E5;
+  min-width: 1170px;
+  min-height: 256px;
+  border-radius: 15px;
+  overflow: hidden;
+ }
+
+ .blog-container {
+  padding: 45px;
+ }
+
+ .form-blog {
+  width: 1080px;
+  height: 106px;
+  border-radius: 15px;
+  background-color: #FFF;
+  overflow: hidden;
+  padding-left: 28px;
+  padding-top: 31px;
+ }
+
+ .blog-title {
+  margin-left: 0;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+ }
+
+ .label-blog {
+  display: inline-block;
+ }
+
+ .select-from {
+  border: 0;
+  width: 169px;
+  height: 43px;
+  margin-right: 41px;
+ }
+
+ .p-blog {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #000000;
+  margin-left: 4px;
+ }
+
+ .blog-date {
+  border: 0;
+  margin-right: 41px;
+  width: 121px;
+  height: 43px;
+ }
+
+ .blog-number {
+  border: 0;
+  margin-right: 41px;
+  width: 121px;
+  height: 45px;
+  border-bottom: 1px solid #E5E5E5;
+ }
+
+ .blog-number-tourists {
+  margin-right: 36px;
+ }
+
+.btn-blog {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #CC9933;
+  padding: 13px 30px;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+}
+
+.find {
+  display: inline-block;
+  position: relative;
+  top: -11px;
+}
+
+.blog {
+  margin-bottom: 70px;
+}
+
+/*contacts*/
+.contacts-block {
+  width: 1170px;
+  min-height: 618px;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+}
+
+.btn-contacts {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 30px;
+  color: #CC9933;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+}
+
+.contacts-item {
+  width: 375px;
+  min-height: 72px;
+  padding: 0;
+  margin: 0 0 25px;
+  border-bottom: 1px solid #E9E9E9;
+  display: flex;
+}
+
+.contacts-item:last-child {
+  margin: 0;
+}
+
+.contacts-li {
+  margin-bottom: 45px;
+}
+
+.all-contacts {
+  width: 375px;
+  min-height: 528px;
+  margin: 45px 52px 45px 45px;
+}
+
+.contacts-img {
+  width: 653px;
+  height: 528px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-image: url("../img/contacts-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 45px 45px 45px 0;
+}
+
+.p-contacts {
+  width: 140px;
+  padding-right: 5px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  display: block;
+}
+
+.p-adress {
+  max-width: 230px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+  display: block;
+}
+
+.p-tel-div {
+  max-width: 230px;
+}
+
+.a-tel {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #CC9933;
+}
+
+.p-mail-div {
+  max-width: 230px;
+}
+
+.a-mail {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #CC9933;
+}
+
+.contacts-booking, .contacts-cooperation {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #999999;
+}
+
+.contacts-chart {
+  max-width: 230px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+}
+
+.p-margin {
+  margin-bottom: 23px;
+}
+
+.contacts {
+  margin-bottom: 40px;
+}
+
+/*footer*/
+.footer-container {
+  background: #333333;
+  border-radius: 15px;
+  width: 1170px;
+  min-height: 340px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  background-image: url("../img/sun.png");
+  background-repeat: no-repeat;
+  background-size: 254px 228px;
+  background-position: left 740px bottom 1px;
+}
+
+.footer-main {
+  width: 1080px;
+  min-height: 250px;
+  margin: 45px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.footer-company {
+  width: 302px;
+  min-height: 250px;
+  margin-right: 125px;
+}
+
+.footer-adress {
+  width: 360px;
+  min-height: 250px;
+  margin-right: 268px;
+}
+
+.footer-icons {
+  width: 25px;
+  min-height: 115px;
+}
+
+.footer-company-first, .footer-company-second {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 190%;
+  color: #FFFFFF;
+  margin-bottom: 37px;
+}
+
+.footer-company-second {
+  margin-bottom: 40px;
+}
+
+.footer-company-third {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #CC9933;
+}
+
+.footer-adress-first {
+  margin-bottom: 15px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+.a-footer-adress {
+  display: inline;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #CC9933;
+}
+
+.block {
+  width: 360px;
+}
+
+.footer-adress-second {
+  margin-bottom: 15px;
+}
+
+.footer-icon-first {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 20px;
+  background-image: url("../img/icon-owl.svg");
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+}
+
+.footer-icon-second {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 20px;
+  background-image: url("../img/icon-ok.svg");
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+}
+
+.footer-icon-third {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 20px;
+  background-image: url("../img/icon-vk.svg");
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
 }
