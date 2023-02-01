@@ -1,4 +1,4 @@
 # First layout
-> Site of hotels
+Site of hotels
 
 `                      `
